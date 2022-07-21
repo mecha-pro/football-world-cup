@@ -1,22 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
 /*--------------
-     Utilities
+    fonts arimo
  ----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+/*--------------------------
+Common styles and Utilities
+ ----------------------------*/
  body{
     font-family: 'Arimo', sans-serif;
  }
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ .container{
+    background: #ffffff;
+    /* height: 100vh;
+    width: 100%; */
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 25%);
+    gap: 40px;
+ }
+ .container > .top-banner{
+    grid-column: 1 / -1;
+    /* grid-row: 1; */
+ }
+ .container > .navigation-bar{
+    grid-column: 2 /3;
+    /* grid-row: 3 / 4; */
+ }
+ .container > .blogs{
+    grid-column: 3 / -2;
+    /* grid-row: 4 / ; */
+ }
+ .container > .extra-button{
+    grid-column: -8 / -5;
+    /* grid-row: 4 / ; */
+ }
 /* 
+   Top banner styles
  */
  .top-banner{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr);
+    grid-template-rows: repeat(1, 1fr);
     justify-content: space-around;
-    border-radius: 40px;
+    border-radius: 50px;
     color: #ffffff;
     background-color: #161616
 }
 .banner-items{
-    width: 531px;
-    height: 424px;
+    width: 530px;
+    height: 430px;
     left: 246px;
     top: 161px;
 }
@@ -42,12 +80,39 @@
     color: #ffffff;
     text-decoration: none;
 }
-div img{
+.banner-image img{
     width: 581px;
     height: 613px;
     left: 24px;
     top: 83px;
+}
+/*-----------------------
+   navigation bar Styles
+ -------------------------*/
+ .navigation-bar{
+    padding: 20px;
  }
+ .navigation-bar{
+
+    background-color: #161616;
+ }
+ .navigation-buttons a{
+    text-decoration: none;
+ }
+/*--------------
+   blogs Styles
+ -----------------*/
+ .blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ }
+/* -------------------
+       Footer styles
+-------------------------*/
+footer{
+    color: #ffffff;
+    background-color: #161616;
+}
 /* .top-banner{
     
     display: grid;
