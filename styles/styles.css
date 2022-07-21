@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+/*--------------
+     Utilities
+ ----------------*/
+ body{
+    font-family: 'Arimo', sans-serif;
+ }
+/* 
+ */
+.top-conainer{
+    color: #ffffff;
+    background-color: #161616;
+    display: grid;
+    justify-content: center;
+    /* grid-template-rows: repeat(1, 1fr); */
+    height: 50%;
+    width: 75%;
+    border: 2px solid darkmagenta;
+    grid-template-columns: repeat(3, 1fr);
+}
+div img{
+    width: 150%;
+}
